@@ -1,0 +1,57 @@
+.banner-section {
+  position: relative;
+  background: url(../../assets/images/home/banner.jpg) no-repeat center
+    center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding-top: 250px;
+  gap: 20px;
+  /* font-size: 2rem; */
+  /* font-weight: 700; */
+}
+.banner-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent black shadow */
+  z-index: 1; /* Ensure it appears below the content */
+}
+
+.banner-wrapper {
+  position: relative; /* Ensures the content is above the overlay */
+  z-index: 2;
+}
+
+.text-content {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 45px; /* Default desktop title size */
+  font-weight: 900;
+}
+
+/* Mobile adjustments using media queries */
+@media (max-width: 768px) {
+  .text-content {
+    font-weight: bold;
+    font-size: 14px; 
+    line-height: 1.5;
+    /* display: center; */
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 0 20px;
+  }
+}
