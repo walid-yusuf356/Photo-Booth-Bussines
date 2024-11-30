@@ -5,12 +5,15 @@ import "./header.css";
 const header = () => {
   return (
     <section>
-        <div className="contact text-center py-4">
-            Call us today! (918) 402-5766
-        </div>
+      <div className="contact text-center py-4">
+        Call us today! (918) 402-5766
+      </div>
       <nav className="main_header_wrapper navbar navbar-expand-lg pt-3">
         <div className="container">
-          <Link className="logo rounded navbar-brand d-flex align-items-center gap-3" to="#">
+          <Link
+            className="logo rounded navbar-brand d-flex align-items-center gap-3"
+            to="#"
+          >
             <img src={logo} alt="" className="rounded" />
             <span className="brand-text"></span>
           </Link>
@@ -31,11 +34,7 @@ const header = () => {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  aria-current="page"
-                  to="/"
-                >
+                <Link className="nav-link active" aria-current="page" to="/">
                   Home
                 </Link>
               </li>
@@ -45,7 +44,7 @@ const header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <Link className="nav-link" to="/galary">
                   Gallary
                 </Link>
               </li>
@@ -59,7 +58,7 @@ const header = () => {
                   Contact Us
                 </Link>
               </li>
-              <li className="nav-item nav-link" >
+              <li className="nav-item nav-link">
                 <button className="btn btn-danger btn-lg p-2" type="submit">
                   Instant Quotes
                 </button>

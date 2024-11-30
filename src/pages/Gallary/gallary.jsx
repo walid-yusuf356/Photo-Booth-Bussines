@@ -1,7 +1,7 @@
 const gallary = () => {
   return (
     <div>
-      
+      fre
     </div>
   )
 }

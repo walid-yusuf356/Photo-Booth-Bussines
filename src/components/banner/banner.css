@@ -8,8 +8,10 @@
   color: #fff;
   padding-top: 250px;
   gap: 20px;
-  /* font-size: 2rem; */
-  /* font-weight: 700; */
+  text-align: center;
+}
+.inner-banner {
+  max-width: 1000px; /* Optional: Limit width for better readability */
 }
 .banner-section::before {
   content: "";
