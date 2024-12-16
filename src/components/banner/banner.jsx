@@ -1,19 +1,25 @@
 import "./banner.css";
+import backgroundVideo from '../../assets/videos/JCi - Spin Booth.mp4';
 
-const banner = () => {
+const Banner = () => {
   return (
-    <section className="banner-section d-flex justify-content-center">
-      <div className="banner-wrapper d-flex flex-column text-center ">
-        <div className="inner-banner text-white ">
+    <section className="banner-section d-flex justify-content-center align-items-center position-relative">
+      <video className="background-video" autoPlay loop muted playsInline>
+        <source src={backgroundVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      {/* <div className="banner-overlay"></div>
+      <div className="banner-wrapper d-flex flex-column text-center">
+        <div className="inner-banner text-white">
           <h1 className="title">Make Every Moment Picture-Perfect!</h1>
           <p className="text-content pt-4">
             Turn every occasion into a memorable celebration with our premium
             photo booth experiences! 
-            Whether it’s a wedding, corporate event, birthday party, or any
+            Whether it is a wedding, corporate event, birthday party, or any
             special gathering, our photo 
             booths bring fun, creativity, and energy to every event. Capture the
             joy of your guests 
-            and create keepsakes they’ll cherish forever.
+            and create keepsakes they will cherish forever.
           </p>
         </div>
 
@@ -22,9 +28,9 @@ const banner = () => {
             Instant Quotes
           </button>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
 
-export default banner;
+export default Banner;

@@ -1,20 +1,27 @@
+/* Contact Bar */
 .contact {
-    color: white;
-    background: #263238 ;
-}
-.main_header_wrapper {
-    background-color: white;
-    max-width: 100%;
-  }
-.navbar-nav {
-    gap: 50px;
-    font-weight: bold;
-    font-size: 20px;
+  color: white;
+  background: #263238;
+  font-size: 16px;
 }
 
+/* Navbar Links Styling */
+.navbar-nav {
+  gap: 30px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.nav-link:hover {
+  color: #dc3545 !important;
+}
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .navbar-nav {
-        gap: 10px;
-        font-size: 18px;
-    }
+  .navbar-nav {
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
 }

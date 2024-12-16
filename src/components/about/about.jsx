@@ -1,5 +1,6 @@
 
-function about() {
+
+const about = () => {
   return (
     <div>
       
