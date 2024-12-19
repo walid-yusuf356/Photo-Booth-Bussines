@@ -1,4 +1,4 @@
-import logo from "../../assets/images/home/DFC_Logo-1.PNG";
+import logo from "../../assets/images/home/DFC_Logo.png";
 import { Link } from "react-router-dom";
 import "./header.css";
 
@@ -10,7 +10,7 @@ const Header = () => {
       </div>
       <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
         <div className="container">
-          <Link className="navbar-brand d-flex align-items-center" to="#">
+          <Link className="navbar-brand d-flex align-items-center" to="/">
             <img src={logo} alt="Logo" className="rounded me-2" />
             <span className="brand-text"></span>
           </Link>
@@ -56,7 +56,8 @@ const Header = () => {
                 </Link>
               </li> */}
               <li className="nav-item ms-lg-3 mt-2 mt-lg-0">
-                <Link to="/contact"
+                <Link
+                  to="/contact"
                   className="btn btn-outline-danger btn-lg"
                   type="submit"
                   style={{ fontWeight: 700, fontSize: "20px" }}

@@ -2,7 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/header/header";
 import Home from "./pages/Home/home";
-import About from "./components/about/about";
+import About from "./pages/About/about";
 import Gallary from "./pages/Gallary/gallery";
 import Footer from "./components/footer/footer";
 import Faq from "./pages/FAQ/Faq";
