@@ -3,7 +3,35 @@
   background-color: #c5e1d4;
 } */
 
+/* Remove default blue outline and set to red */
+input:focus,
+textarea:focus,
+select:focus {
+  box-shadow: none !important;
+  outline: 2px solid red !important;
+  outline-offset: 2px !important; /* Optional: adds some space between the outline and the element */
+}
+
+/* Specific to your input fields */
+.form-control,
+.form-select {
+  border: 1px solid #ccc !important; /* Default border color */
+  transition: border-color 0.3s ease; /* Smooth transition for hover/focus */
+}
+
+/* Contact box hover effect */
 .contact-box:hover {
-  border: 2px solid #86B7FE;
-  transition: border-color 0.3s ease-in-out;
+  border: 1px solid red;
+}
+
+iframe {
+  border: none !important; /* Remove border */
+  outline: none !important; /* Remove outline */
+  box-shadow: none !important; /* Remove shadow */
+}
+
+iframe:hover,
+select:hover {
+  box-shadow: none !important;
+  outline: 2px solid red !important;
 }

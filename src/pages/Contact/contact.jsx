@@ -217,6 +217,13 @@ const Contact = () => {
                     <option value="360 Spin">360 Spin</option>
                   </select>
                 </div>
+                {/* Add Hidden Input for the Company Name */}
+                <input
+                  type="hidden"
+                  name="company_name"
+                  value="Dallas_Photobooth"
+                />
+
                 <div className="mb-3">
                   <label htmlFor="message" className="form-label">
                     Message
@@ -230,9 +237,10 @@ const Contact = () => {
                     required
                   ></textarea>
                 </div>
-                <button type="submit" className="btn btn-lg btn-danger">
-                  Send Message
+                <button type="submit" className="btn btn-lg btn-danger book-now-btn fw-bold">
+                  Send Request
                 </button>
+
               </form>
             </div>
           </div>

@@ -175,7 +175,7 @@ function about() {
                 </div>
 
                 <Link
-                  className="btn btn-danger btn-lg px-4 py-2 d-inline-flex align-items-center gap-2"
+                  className="about-btn btn btn-danger btn-lg px-4 py-2 d-inline-flex align-items-center gap-2 fw-bold"
                   to="/contact"
                 >
                   Book Now

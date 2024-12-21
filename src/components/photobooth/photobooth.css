@@ -1,0 +1,13 @@
+.img-section {
+  width: 1000px;
+  /* height: 450; */
+    margin: 0 auto;
+    display: flex;
+}
+.container-fluid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
