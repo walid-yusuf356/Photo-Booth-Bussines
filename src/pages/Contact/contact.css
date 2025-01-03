@@ -1,37 +1,93 @@
-/* #offcanvasTop {
-  --bs-offcanvas-height: 80vh;
-  background-color: #c5e1d4;
-} */
+.upper_title {
+  background-image: url(../../assets/images/gallery/gallery-4.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  margin-top: 0;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+.book_txt {
+font-size: 80px;
+font-weight: 700;
+}
+/* Custom form controls */
+.custom-input {
+  border: 1px solid #dee2e6;
+  transition: all 0.2s ease-in-out;
+}
 
-/* Remove default blue outline and set to red */
-input:focus,
-textarea:focus,
-select:focus {
+.custom-input:hover {
+  border-color: #dc3545;
+}
+
+.custom-input:focus {
+  border-color: #dc3545!important;
   box-shadow: none !important;
-  outline: 2px solid red !important;
-  outline-offset: 2px !important; /* Optional: adds some space between the outline and the element */
+  /* outline: 2px solid red !important; */
+  border-radius: red !important;
 }
 
-/* Specific to your input fields */
-.form-control,
-.form-select {
-  border: 1px solid #ccc !important; /* Default border color */
-  transition: border-color 0.3s ease; /* Smooth transition for hover/focus */
+/* Custom radio buttons */
+.custom-radio-group .form-check {
+  margin-bottom: 0.5rem;
 }
 
-/* Contact box hover effect */
+.form-check-input.custom-radio {
+  border-color: #dc3545;
+}
+
+.form-check-input.custom-radio:checked {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.form-check-input.custom-radio:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+
+/* Contact box styling */
+.contact-box {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
 .contact-box:hover {
-  border: 1px solid red;
+  border-color: #dc3545;
 }
 
-iframe {
-  border: none !important; /* Remove border */
-  outline: none !important; /* Remove outline */
-  box-shadow: none !important; /* Remove shadow */
+/* Map container styling */
+.map-container {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-iframe:hover,
-select:hover {
-  box-shadow: none !important;
-  outline: 2px solid red !important;
+.map-container:hover {
+  outline: 2px solid #dc3545;
+  outline-offset: 2px;
+}
+
+/* Date picker styling */
+input[type="date"] {
+  color-scheme: light;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-box {
+    margin-bottom: 1rem;
+  }
 }

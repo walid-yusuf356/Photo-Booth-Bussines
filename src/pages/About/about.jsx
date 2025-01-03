@@ -11,7 +11,7 @@ function about() {
             <h2 className="about-title fw-bold mb-4 display-5 text-center">
               Why Choose Us?
             </h2>
-            <p className="text-secondary mb-5 text-center lead fs-4">
+            <p className="upper_text text-secondary mb-5 text-center lead fs-4">
               We pride ourselves on delivering top-notch photobooth and
               maintenance solutions to cyclists of all levels.
             </p>
@@ -175,10 +175,18 @@ function about() {
                 </div>
 
                 <Link
-                  className="about-btn btn btn-danger btn-lg px-4 py-2 d-inline-flex align-items-center gap-2 fw-bold"
                   to="/contact"
+                  className="btn btn-danger book-now-btn btn-lg fw-bold"
                 >
-                  Book Now
+                  <svg
+                    aria-hidden="true"
+                    className="e-font-icon-svg e-far-calendar-alt me-2 mb-2"
+                    viewBox="0 0 448 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6-5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"></path>
+                  </svg>
+                  <span className="text-bold">Book Now</span>
                 </Link>
               </div>
             </div>

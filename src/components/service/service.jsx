@@ -10,14 +10,14 @@ const Service = () => {
       <div className="container text-center">
         <h2 className="mb-5">Our Photo Booth Services</h2>
         <div className="row g-4">
-          <div className="col-lg-4 col-md-6 ">
-            <div className="service-card p-3 shadow">
+          <div className="col-lg-4 col-md-6">
+            <div className="service-card p-4 shadow">
               <h3 className="mb-3">Roaming Photo Booth</h3>
               <div className="image-wrapper mb-3">
                 <img src={img1} alt="Roaming Photo Booth" className="img-fluid" />
               </div>
               <p>
-                Let the party come to you! With our Roaming Photo Booth, our friendly attendant moves through the crowd, capturing candid and spontaneous moments wherever the action is. This mobile experience is perfect for keeping everyone engaged and in the moment. Whether it’s on the dance floor or during heartfelt speeches, this booth ensures no moment is missed!
+                Let the party come to you! With our Roaming Photo Booth, our friendly attendant moves through the crowd, capturing candid and spontaneous moments wherever the action is. This mobile experience is perfect for keeping everyone engaged and in the moment. Whether it’s on the dance floor or during heartfelt speeches!
               </p>
             </div>
           </div>

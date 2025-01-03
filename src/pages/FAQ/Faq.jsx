@@ -1,3 +1,4 @@
+import "./FAQ.css";
 const FAQ = () => {
   return (
     <div className="container">
@@ -7,9 +8,12 @@ const FAQ = () => {
       <h2 className="text-center mb-4">General Questions</h2>
       <div className="accordion mb-5" id="accordionGeneral">
         <div className="accordion-item">
-          <h2 className="accordion-header" id="headingGeneral1">
+          <h2
+            className="custom_accordion accordion-header"
+            id="headingGeneral1"
+          >
             <button
-              className="accordion-button"
+              className="custom_accordion accordion-button"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseGeneral1"
@@ -36,7 +40,7 @@ const FAQ = () => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingGeneral2">
             <button
-              className="accordion-button collapsed"
+              className="custom_accordion accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseGeneral2"
@@ -63,7 +67,7 @@ const FAQ = () => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingGeneral3">
             <button
-              className="accordion-button collapsed"
+              className="custom_accordion accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseGeneral3"
@@ -89,11 +93,11 @@ const FAQ = () => {
 
       {/* Booking and Customization */}
       <h2 className="text-center mb-4">Booking and Customization</h2>
-      <div className="accordion mb-5" id="accordionBooking">
+      <div className="accordion mb-5 " id="accordionBooking">
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingBooking1">
             <button
-              className="accordion-button"
+              className="custom_accordion accordion-button"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseBooking1"
@@ -118,7 +122,7 @@ const FAQ = () => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingBooking2">
             <button
-              className="accordion-button collapsed"
+              className="custom_accordion accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseBooking2"
@@ -144,7 +148,7 @@ const FAQ = () => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingBooking3">
             <button
-              className="accordion-button collapsed"
+              className="custom_accordion accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseBooking3"
@@ -174,7 +178,7 @@ const FAQ = () => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingEventDay1">
             <button
-              className="accordion-button"
+              className="custom_accordion accordion-button"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseEventDay1"
@@ -200,7 +204,7 @@ const FAQ = () => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingEventDay2">
             <button
-              className="accordion-button collapsed"
+              className="custom_accordion accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseEventDay2"
@@ -225,7 +229,7 @@ const FAQ = () => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingEventDay3">
             <button
-              className="accordion-button collapsed"
+              className="custom_accordion accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseEventDay3"
@@ -255,7 +259,7 @@ const FAQ = () => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingPricing1">
             <button
-              className="accordion-button"
+              className="custom_accordion accordion-button"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapsePricing1"
@@ -281,7 +285,7 @@ const FAQ = () => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingPricing2">
             <button
-              className="accordion-button collapsed"
+              className="custom_accordion accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapsePricing2"
@@ -305,7 +309,7 @@ const FAQ = () => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingPricing3">
             <button
-              className="accordion-button collapsed"
+              className="custom_accordion accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapsePricing3"
@@ -336,7 +340,7 @@ const FAQ = () => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingAddOns1">
             <button
-              className="accordion-button"
+              className="custom_accordion accordion-button"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseAddOns1"
@@ -361,7 +365,7 @@ const FAQ = () => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingAddOns2">
             <button
-              className="accordion-button collapsed"
+              className="custom_accordion accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseAddOns2"
@@ -387,7 +391,7 @@ const FAQ = () => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingAddOns3">
             <button
-              className="accordion-button collapsed"
+              className="custom_accordion accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseAddOns3"
@@ -417,7 +421,7 @@ const FAQ = () => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingAfterEvent1">
             <button
-              className="accordion-button"
+              className="custom_accordion accordion-button"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseAfterEvent1"
@@ -443,7 +447,7 @@ const FAQ = () => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingAfterEvent2">
             <button
-              className="accordion-button collapsed"
+              className="custom_accordion accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseAfterEvent2"
@@ -468,7 +472,7 @@ const FAQ = () => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingAfterEvent3">
             <button
-              className="accordion-button collapsed"
+              className="custom_accordion accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseAfterEvent3"

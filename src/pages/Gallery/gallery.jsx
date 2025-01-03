@@ -9,7 +9,7 @@ import img8 from "../../assets/images/home/Service-1.jpg";
 import img9 from "../../assets/images/gallery/gallery-9.jpg";
 import "./gallery.css"
 
-const gallary = () => {
+const gallery = () => {
   return (
     <section className="gallery min-vh-100">
         <div className="container-lg">
@@ -69,4 +69,4 @@ const gallary = () => {
   )
 }
 
-export default gallary
+export default gallery
