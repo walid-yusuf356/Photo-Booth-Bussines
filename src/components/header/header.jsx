@@ -6,10 +6,15 @@ import "./header.css";
 const Header = () => {
   return (
     <header className="sticky-top">
-      <div className="contact text-center py-2">
+      {/* <div className="contact text-center py-4 fw-bold">
         Call us today! (918) 402-5766
+      </div> */}
+      <div className="contact text-center py-4 fw-bold">
+        <a href="tel:9184025766" className="text-decoration-none text-white">
+          Call us today! (918) 402-5766
+        </a>
       </div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+      <nav className="navbar navbar-expand-lg navbar-light bg-white py-1 shadow-sm">
         <div className="container">
           <Link className="navbar-brand d-flex align-items-center" to="/">
             <img src={logo} alt="Logo" className="rounded me-2" />

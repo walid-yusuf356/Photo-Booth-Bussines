@@ -12,8 +12,8 @@
   margin-right: -50vw;
 }
 .book_txt {
-font-size: 80px;
-font-weight: 700;
+  font-size: 80px;
+  font-weight: 700;
 }
 /* Custom form controls */
 .custom-input {
@@ -26,7 +26,7 @@ font-weight: 700;
 }
 
 .custom-input:focus {
-  border-color: #dc3545!important;
+  border-color: #dc3545 !important;
   box-shadow: none !important;
   /* outline: 2px solid red !important; */
   border-radius: red !important;

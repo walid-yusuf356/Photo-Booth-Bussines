@@ -8,7 +8,7 @@ function about() {
       <div className="container">
         <div className="row justify-content-md-center">
           <div className="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-            <h2 className="about-title fw-bold mb-4 display-5 text-center">
+            <h2 className="about-title fw-bold mb-4 display-5 text-center ">
               Why Choose Us?
             </h2>
             <p className="upper_text text-secondary mb-5 text-center lead fs-4">
@@ -24,9 +24,12 @@ function about() {
           <div className="col-12 col-lg-6">
             <img
               src={img}
-              className="img-fluid rounded border border-dark about_img"
+              className="img-fluid rounded border border-dark "
               loading="lazy"
               alt="About Us"
+              style={{ width: "100%",
+              height: "400px"
+               }}
             />
           </div>
           <div className="col-12 col-lg-6 col-xxl-6">

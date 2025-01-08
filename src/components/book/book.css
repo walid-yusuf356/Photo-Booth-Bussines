@@ -1,0 +1,65 @@
+.video-section .bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 65px;
+  }
+  
+  .min-vh-75 {
+    min-height: 75vh;
+  }
+  
+  .video-btn {
+    width: 80px;
+    height: 80px;
+    background-color: #dc3545;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .video-btn:hover {
+    transform: scale(1.1);
+    background-color: #bb2d3b;
+  }
+  
+  .play-icon {
+    color: white;
+    font-size: 24px;
+    margin-left: 4px;
+  }
+  
+  .video-text {
+    font-size: 1.1rem;
+  }
+  
+  .phone-number {
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .appointment-section {
+    background-color: #dc3545;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  
+  @media (max-width: 991.98px) {
+    .min-vh-75 {
+      min-height: 50vh;
+    }
+    
+    .video-btn {
+      width: 60px;
+      height: 60px;
+    }
+    
+    .play-icon {
+      font-size: 20px;
+    }
+  }
+  
+  

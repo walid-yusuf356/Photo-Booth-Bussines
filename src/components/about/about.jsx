@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import video from "../../assets/videos/about-video.mp4";
 import "./about.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCamera } from "@fortawesome/free-solid-svg-icons";
 
-export default function HeroSection() {
+export default function about() {
   return (
     <section className="py-5">
       <div className="container">
@@ -26,7 +28,7 @@ export default function HeroSection() {
               to="/contact"
               className="btn btn-danger book-now-btn btn-lg fw-bold"
             >
-              
+              <FontAwesomeIcon icon={faCamera} className="me-2" />
               <span className="text-bold">About Us</span>
             </Link>
           </div>

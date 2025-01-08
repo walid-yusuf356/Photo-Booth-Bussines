@@ -61,9 +61,13 @@
     text-align: center;
   }
   .video-section {
+    width: 100%;
     height: auto;
-    margin-left: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
+  
   .btn {
     width: auto;
   }
