@@ -1,5 +1,5 @@
 import "./faq.css";
-const FAQ = () => {
+const faq = () => {
   return (
     <div className="container">
       <h1 className="text-center py-2">Frequently Asked Questions</h1>
@@ -501,4 +501,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default faq;
