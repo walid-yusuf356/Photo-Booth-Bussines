@@ -5,7 +5,7 @@ import Home from "./pages/Home/home";
 import About from "./pages/About/about";
 import Gallery from "./pages/Gallery/gallery";
 import Footer from "./components/footer/footer";
-import Faq from "./pages/FAQ/FAQ";
+import Faq from "./pages/FAQ/Faq";
 import Contact from "./pages/Contact/contact";
 import NotFound from "./pages/NotFound/notFound";
 
