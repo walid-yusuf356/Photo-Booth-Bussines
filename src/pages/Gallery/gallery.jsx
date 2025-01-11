@@ -1,72 +1,51 @@
-import img1 from "../../assets/images/gallery/gallery-1.jpg";   
-import img2 from "../../assets/images/gallery/gallery-2.jpg";
-import img3 from "../../assets/images/gallery/gallery-3.jpg";
-import img4 from "../../assets/images/gallery/gallery-4.jpg";
-import img5 from "../../assets/images/gallery/gallery-5.jpg";
-import img6 from "../../assets/images/gallery/gallery-6.jpg";
-import img7 from "../../assets/images/gallery/gallery-7.jpg";
-import img8 from "../../assets/images/home/Service-1.jpg";
-import img9 from "../../assets/images/gallery/gallery-9.jpg";
-import "./gallery.css"
+import { useState } from "react";
+import "./gallery.css";
 
-const gallery = () => {
+// Import all images
+import img1 from "../assets/images/gallery/gallery-1.jpg";
+import img2 from "../assets/images/gallery/gallery-2.jpg";
+import img3 from "../assets/images/gallery/gallery-3.jpg";
+import img4 from "../assets/images/gallery/gallery-4.jpg";
+import img5 from "../assets/images/gallery/gallery-5.jpg";
+import img6 from "../assets/images/gallery/gallery-6.jpg";
+import img7 from "../assets/images/gallery/gallery-7.jpg";
+import img8 from "../assets/images/gallery/gallery-8.jpg";
+import img9 from "../assets/images/gallery/gallery-9.jpg";
+
+const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
+
+function Gallery() {
+  const [selectedImg, setSelectedImg] = useState(null);
+
+  // Function to handle clicking outside the image to close the modal
+  const handleCloseModal = (e) => {
+    if (e.target.classList.contains("modal")) {
+      setSelectedImg(null);
+    }
+  };
+
   return (
-    <section className="gallery min-vh-100">
-        <div className="container-lg">
-            <div className="section-title fw-bold text-center pb-3">
-                <h2>Our Gallery</h2>
-                <p>Check out our gallery to see our photo booth in action!</p>
-            </div>
-            <div className="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
-            <div className="col">
-                <div className="gallery-item">
-                <img src={img1} alt="gallery" />
-                </div>
-            </div>
-            <div className="col">
-                <div className="gallery-item">
-                <img src={img2} alt="gallery" />
-                </div>
-            </div>
-            <div className="col">
-                <div className="gallery-item">
-                <img src={img3} alt="gallery" />
-                </div>
-            </div>
-            <div className="col">
-                <div className="gallery-item">
-                <img src={img4} alt="gallery" />
-                </div>
-            </div>
-            <div className="col">
-                <div className="gallery-item">
-                <img src={img5} alt="gallery" />
-                </div>
-            </div>
-            <div className="col">
-                <div className="gallery-item">
-                <img src={img6} alt="gallery" />
-                </div>
-            </div>
-            <div className="col">
-                <div className="gallery-item">
-                <img src={img7} alt="gallery" />
-                </div>
-            </div>
-            <div className="col">
-                <div className="gallery-item">
-                <img src={img8} alt="gallery" />
-                </div>
-            </div>
-            <div className="col">
-                <div className="gallery-item">
-                <img src={img9} alt="gallery" />
-                </div>
-            </div>
-            </div>
+    <div className="gallery">
+      {images.map((img, index) => (
+        <img
+          key={index}
+          src={img}
+          alt={`Gallery Image ${index + 1}`}
+          className="gallery-image"
+          onClick={() => setSelectedImg(img)}
+        />
+      ))}
+
+      {selectedImg && (
+        <div className="modal" onClick={handleCloseModal}>
+          <span className="close" onClick={() => setSelectedImg(null)}>
+            &times;
+          </span>
+          <img src={selectedImg} alt="Enlarged" className="enlarged-image" />
         </div>
-    </section>
-  )
+      )}
+    </div>
+  );
 }
 
-export default gallery
+export default Gallery;

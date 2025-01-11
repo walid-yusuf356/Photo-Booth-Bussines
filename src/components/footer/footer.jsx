@@ -15,13 +15,19 @@ const Footer = () => {
           <div className="col-md-4 mb-4">
             <h4 className="fw-bold text-danger">Follow Us</h4>
             <div className="social-links d-flex gap-3">
-              <a href="/" className="social-link">
+              <a href="https://www.facebook.com/jarenc" className="social-link">
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
-              <a href="/" className="social-link">
+              <a
+                href="https://www.linkedin.com/in/jarencollins/"
+                className="social-link"
+              >
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
-              <a href="/" className="social-link">
+              <a
+                href="https://www.instagram.com/p/C5qzx9uOJAT/"
+                className="social-link"
+              >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </div>
