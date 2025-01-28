@@ -1,7 +1,7 @@
 // Import images
-import img1 from "../../assets/images/home/service-1.jpg";
-import img2 from "../../assets/images/home/service-2.jpg";
-import img3 from "../../assets/images/home/service-3.jpg";
+import img1 from "../../assets/images/home/Service-1.jpg";
+import img2 from "../../assets/images/home/Service-2.jpg";
+import img3 from "../../assets/images/home/Service-3.jpg";
 import "./service.css";
 
 const Service = () => {
