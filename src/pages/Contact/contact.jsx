@@ -2,6 +2,7 @@
 
 import { useRef } from "react"
 import emailjs from "@emailjs/browser"
+import Swal from "sweetalert2"
 import "./contact.css"
 
 export default function Contact() {
@@ -18,14 +19,26 @@ export default function Contact() {
       )
       .then(
         () => {
-          console.log("SUCCESS!");
-          alert("Message sent successfully!");
-        },
-        (error) => {
-          console.error("FAILED...", error.text);
-          alert("Message failed to send. Please try again later.");
+          // sweat alert here
+          Swal.fire({
+            title: "Good job!",
+            text: "You clicked the button!",
+            icon: "success"
+          });
+        }
+      )
+      .catch(
+        () => {
+          // sweat alert here
+          Swal.fire({
+            title: "Oops...",
+            text: "Something went wrong!",
+            icon: "error"
+          });
         }
       );
+    form.current.reset()
+
   };
 
   return (

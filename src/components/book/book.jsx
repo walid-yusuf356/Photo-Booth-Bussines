@@ -12,7 +12,7 @@ const Book = () => {
         <div
           className="bg-image"
           style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${img1})`,
+            backgroundImage: `linear-gradient(rgba(55, 71, 79, 0.50) 30%, rgba(1255, 255, 255, 0.50) 100%), url(${img1})`,
             height: "500px",
           }}
         >

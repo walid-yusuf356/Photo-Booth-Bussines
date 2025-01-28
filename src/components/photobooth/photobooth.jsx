@@ -10,11 +10,11 @@ const photobooth = () => {
         <div className="d-flex flex-column flex-lg-row justify-content-between gap-5">
           {/* Text Content */}
           {/* Img Content */}
-          <div className="img-section col-lg-6">
+          <div className="img-section col-lg-6 mt-5">
             <img src={img} alt="" />
           </div>
           <div className="text-content">
-            <h1 className="display-5 fw-bold mb-4">
+            <h1 className="display-5 fw-bold mb-4 mt-5">
               Relive Your <span className="text-danger">Special</span> Moments
             </h1>
             <p className="about-text mb-4">

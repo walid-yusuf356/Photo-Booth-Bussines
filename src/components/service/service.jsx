@@ -60,10 +60,10 @@ const Service = () => {
               </div>
               <p>
                 Make your event unforgettable with our 360 Spin Booth, a
-                cutting-edge experience that captures stunning 360° videos. It’s
+                cutting-edge experience that captures stunning 360° videos. It is
                 perfect for creating shareable moments with a unique perspective
                 that puts your guests in the spotlight! Add custom branding and
-                overlays to make every video unique and memorable.
+                overlays to make every video unique. It’s the next level of photo booth entertainment!
               </p>
             </div>
           </div>

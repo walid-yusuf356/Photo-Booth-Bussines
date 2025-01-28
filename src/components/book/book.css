@@ -1,11 +1,14 @@
 .video-section .bg-image {
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
-  padding-top: 65px;
+  padding: 65px;
 }
 
+.video-section {
+  margin-bottom: 5rem;
+}
 /* .min-vh-75 {
   min-height: 75vh;
 } */
@@ -50,11 +53,18 @@
   background-color: #dc3545;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  margin-bottom: 70px;
+  /* padding: 75px 0 75px !important */
 }
 .link:hover {
   color: red;
 }
+ /* laptop size  */
+@media (max-width: 1024px) {
+  .appointment-section {
+    margin-top: 500px;
+  }
+}
+
 @media (max-width: 768px) {
   .min-vh-75 {
     min-height: 50vh;
