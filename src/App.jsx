@@ -5,7 +5,7 @@ import Home from "./pages/Home/home";
 import About from "./pages/About/about";
 import Gallery from "./pages/Gallery/gallery";
 import Footer from "./components/footer/footer";
-import Faq from "./pages/Faq/askedQuestion";
+import Question from "./pages/Question/question";
 import Contact from "./pages/Contact/contact";
 import NotFound from "./pages/NotFound/notFound";
 
@@ -17,7 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/faq" element={<Faq />} />
+        <Route path="/question" element={<Question />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
