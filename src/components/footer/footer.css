@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none !important;
+}
 .footer {
   background-color: #263238;
 }
@@ -38,8 +43,20 @@
 .footer a {
   transition: color 0.3s;
 }
+.name_text {
+  color: #fff;
+  margin-bottom: 1rem;
+  box-sizing: none !important;
+}
 
-@media(max-width: 768px) {
+.name_text span {
+  box-sizing: none !important;
+}
+
+.name_text a {
+  text-decoration: none !important;
+}
+@media (max-width: 768px) {
   .social-links {
     justify-content: center;
   }

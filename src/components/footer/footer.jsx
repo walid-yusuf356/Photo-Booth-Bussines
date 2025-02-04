@@ -66,12 +66,18 @@ const Footer = () => {
         <hr className="bg-light" />
 
         {/* Copyright */}
-        <div className="row text-center">
+        <div className="row text-center d-flex justify-content-center align-items-center">
           <div className="col-md-6 mb-2">
             <p className="mb-0">
               © Copyright{" "}
               <span className="text-danger fw-bold">Dallas Photobooth </span>{" "}
-              {new Date().getFullYear()}. All rights reserved.
+              {new Date().getFullYear()}. All rights reserved. <br />
+              <a href="https://www.Walidyusuf.com">
+                <span className="name_text">
+                  Designed by{" "}
+                  <span className="text-danger fw-bold">Walid Yusuf</span>
+                </span>
+              </a>
             </p>
           </div>
         </div>
