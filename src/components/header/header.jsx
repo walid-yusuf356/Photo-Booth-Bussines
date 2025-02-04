@@ -52,7 +52,7 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/Faq">
+                <Link className="nav-link" to="/question">
                   FAQ
                 </Link>
               </li>
